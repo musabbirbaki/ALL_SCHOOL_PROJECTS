@@ -1,0 +1,30 @@
+extends header.pug
+block header_content
+  body
+    nav.navbar.navbar-expand-sm.fixed-top
+      a.navbar-brand(href='/home')
+        img#logo(src='https://i.imgur.com/t5c5bfo.png')
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link.head(href='/all') All Products
+        li.nav-item
+          form
+            input.head(id='searchBar' type="text" name="search" placeholder="Search...")
+      .navbar-collapse
+        ul.navbar-nav.ml-auto
+          if (name && name !== '')
+            li.nav-item.dropdown.head
+              a.nav-link.head.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Welcome #{name}!
+              .dropdown-menu
+                a.dropdown-item(href='/accountDetails') Account Details
+                a.dropdown-item(href='/logout') Logout
+            li#cartItem.nav-item
+              a#cart.nav-link.head(href='/checkout') Cart
+          else
+            li#profile.nav-item
+              a#login.nav-link.head(href='/login') Login
+            li#cartItem.nav-item
+              a#cart.nav-link.head(href='/login') Cart
+    .banner
+      img#main(src='https://i.imgur.com/9iowgNR.jpg')       

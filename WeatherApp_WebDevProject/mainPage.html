@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Consuming Web Services</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf5hWE0cmJYAjW20TQC8y_vKWJe2urSOI"></script>
+    <script type="text/javascript" src="asmt2.js"></script>
+    <link rel="stylesheet" href="asmt2.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="form">
+        Latitude/longitude:
+        <input type="text" name="lat" id="lat" value="43.944847" />
+        <input type="text" name="lon" id="lon" value="-78.891703" />
+        <button id="goButton">Go</button>
+    </div>
+
+    <div class="container-fluid">
+
+        <!-- Weather Column -->
+        <div id="weather" class="col-sm-2">
+            <!-- Temperature Section -->
+            <h2 class = "weather_subtitle">Temperature</h2>
+            <p id="temperature_data">temperature data</p>
+
+            <!-- Condition Section -->
+            <h2 class = "weather_subtitle">Condition</h2>
+            <p id="condition_data">condition data</p>
+
+            <!-- Wind Section -->
+            <h2 class = "weather_subtitle">Wind</h2>
+            <p id="wind_data">wind data</p>
+        </div>
+
+        <!-- Forcast Column -->
+        <div id="forecast" class="col-sm-8 col-sm-offset-1">
+            <h1 id="forecast_title">Forecast:</h1>
+            <table id="forecast_table">
+                <tr id="head">
+                    <th>Date</th>
+                    <th>Condition</th>
+                    <th>High</th>
+                    <th>Low</th>
+                    <th>Wind</th>
+                    <th>Outlook</th>
+                    <!-- <td><img src="http://cdn.apixu.com/weather/64x64/day/302.png"></td> -->
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>

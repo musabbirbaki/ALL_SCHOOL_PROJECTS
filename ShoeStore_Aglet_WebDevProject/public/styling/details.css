@@ -1,0 +1,29 @@
+.detailContainer{
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: lightgrey;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+#edit{
+  float:right;
+border-radius: 0;
+}
+
+.swapButton{
+  display:none;
+}
+
+#changePassBox{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.detailBtn{
+  border-radius: 0;
+}
+
+.submission{
+  margin-top: 1em;
+}

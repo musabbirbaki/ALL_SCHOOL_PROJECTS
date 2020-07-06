@@ -1,0 +1,36 @@
+#form{
+  margin: 2em;
+  margin-bottom: 0.5em;
+}
+
+table {
+  width: 105%;
+}
+
+td{
+  vertical-align: top;
+  height: 3em;
+}
+
+td, th{
+  text-indent: 0.5em;
+  text-align: left;
+  height: 2.5em;
+  text-align: left;
+
+}
+
+tr{
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #c1c1c1;
+}
+
+#weather{
+  background-color: lightblue;
+  margin-top: 2em;
+  margin-left: 1em;
+  padding: 0 1em 1em 3em;
+  border: 1px solid darkBlue;
+  border-radius: 5px;
+}

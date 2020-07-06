@@ -1,0 +1,47 @@
+extends header.pug
+block header_content
+  body
+    nav.navbar.navbar-expand-sm.bg-dark.navbar-dark
+      a(href='/home')
+        img(src='https://i.imgur.com/t5c5bfo.png', style='width:30%;')
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link(href='/all') All Products
+        li.nav-item
+          form
+            input.head(id='searchBar' type="text" name="search" placeholder="Search...")
+      .navbar-collapse
+        ul.navbar-nav.ml-auto
+          if (name && name !== '')
+            li.nav-item.dropdown
+              a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Welcome #{name}!
+              .dropdown-menu
+                a.dropdown-item(href='/accountDetails') Account Details
+                a.dropdown-item(href='/logout') Logout
+          else
+            li#profile.nav-item
+              a#login.nav-link(href='/login') Login
+          li#cartItem.nav-item
+            a#cart.nav-link(href='/checkout') Cart
+    .container.detailContainer#account
+      button#edit.btn.btn-dark.detailBtn Edit
+      h3 Account Details
+      br
+      h5 Full Name
+      p#name=name
+      h5 Email Address
+      p=email
+      h5 Phone
+      p#phone=phone
+      h5 Country
+      p#country
+      h5 City
+      p#city
+      br
+      form#update(action='/updateDetails', method='POST')
+      p=result
+    .container.detailContainer#changePassBox
+      h3 Password options
+      p=passResult
+      button#changePass.btn.btn-dark.detailBtn Change Password

@@ -1,0 +1,68 @@
+extends header.pug 
+block header_content
+
+  script(type='text/javascript', src='scripts/add_quantity_to_cart.js')
+  link(rel='stylesheet', href='styling/add_quantity_to_cart.css')
+
+  body
+    nav.navbar.navbar-expand-sm.bg-dark.navbar-dark
+      a(href='/home')
+        img#logo(src='https://i.imgur.com/t5c5bfo.png', onclick="location.href = '/home'")
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link(href='/all') All Products
+        li.nav-item
+          form
+            input#searchBar(type="text" name="search" placeholder="Search..")
+      .navbar-collapse
+        ul.navbar-nav.ml-auto
+          if (name && name !== '')
+            li.nav-item.dropdown
+              a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Welcome #{name}!
+              .dropdown-menu
+                a.dropdown-item(href='/accountDetails') Account Details
+                a.dropdown-item(href='/logout') Logout
+          else
+            li#profile.nav-item
+              a#login.nav-link(href='/login') Login
+          li#cartItem.nav-item
+            a#cart.nav-link(href='/checkout') Cart
+
+    .container
+      div(class="tile is-ancestor")
+        div(class="tile is-vertical is-8")
+          div(class="tile is-parent is-vertical")
+            article(class="tile is-child notification")
+              p#product_name(class="title") #{product_name}
+              img#product_image(src=product_picture_url)
+              
+
+          div(class="tile is-parent")
+            article(class="tile is-child notification")
+              p(class="title") Description
+              p#product_description(class="subtitle") #{product_description}
+            
+        div(class="tile is-parent")
+          article(class="tile is-child notification")
+            div(class="content")
+              h3 Price:
+              p#product_price(class="title") $#{product_price}
+              h3 Rating:
+              p#product_rating(class="title") #{product_rating} stars
+              h3 Stock:
+              p#product_stock(class="title") #{product_stock}
+              div#cart_quantity_buttons
+                form(action='/updateCart', method="POST")
+                  p Add to cart:
+                  a#sub_from_quantity(class="button") -
+
+                  //- passing cart info
+                  input#add_to_cart_quantity(type='text', name='product_quantity' value=0)
+                  input#product_id(hidden type='text', name='product_id' value=product_sid)
+
+                  a#add_to_quantity(class="button") +
+                  button#go_to_cart(class="button is-link is-rounded", type="submit") Add to Cart
+
+                form(action='/checkout', method="GET")
+                  button#go_to_cart(class="button is-link is-rounded", type="submit") Go to Cart

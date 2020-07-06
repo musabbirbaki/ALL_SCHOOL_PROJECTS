@@ -1,0 +1,12 @@
+{
+    "register_string": "Register",
+    "login_string": "Login",
+    "drawer_dashboard": "Dashboard",
+    "drawer_tables": "Tables",
+    "drawer_profile": "Profile",
+    "drawer_logout": "Logout",
+    "change_pic": "Change Profile Picture",
+    "pic_message": "Please Change Profile Picture",
+    "gallery_message": "Please press the button below to open your gallery",
+    "gallery_button": "Gallery"
+}

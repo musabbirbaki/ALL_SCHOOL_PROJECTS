@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "533522295371",
+    "firebase_url": "https://pocketcrmv3.firebaseio.com",
+    "project_id": "pocketcrmv3",
+    "storage_bucket": "pocketcrmv3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533522295371:android:b0ff9cb162303c5a2abbce",
+        "android_client_info": {
+          "package_name": "com.example.pocket_crm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533522295371-agt80lbcaacrbphldf9e7tfmtj30edhe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK3QjYqhHc4eYO2BER1SKxWRolUtc04kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533522295371-agt80lbcaacrbphldf9e7tfmtj30edhe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

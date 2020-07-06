@@ -1,0 +1,56 @@
+h1 {
+  padding: 0.5em 0 0 1em;
+}
+
+#logo{
+  max-width: 30%;
+  height: auto;
+}
+
+#submit{
+  background-color: #ff1a1a;
+  border-color: #ff1a1a;
+  min-width:15%;
+  float: right;
+  white-space: normal;
+}
+
+#submit:hover{
+  background-color: #b30000;
+}
+
+#submit:focus{
+  box-shadow: 0 0 8px #b30000;
+}
+
+#box{
+  width: 30%;
+  padding: 1.5em;
+  margin-top: 5em;
+  border: 1px solid #b30000;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 100px #ffcccc;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #b30000;
+    box-shadow: 0 0 8px #ff1a1a;
+}
+
+form{
+  padding-top: 1em;
+}
+
+h4{
+  padding: 1em 0 1em 0;
+}
+
+a:link, a:visited{
+color: #ff1a1a;
+}
+
+
+a:hover {
+color: #b30000;
+}

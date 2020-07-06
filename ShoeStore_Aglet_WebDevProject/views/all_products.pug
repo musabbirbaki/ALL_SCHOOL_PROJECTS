@@ -1,0 +1,29 @@
+extends header.pug 
+block header_content
+  body
+    nav.navbar.navbar-expand-sm.bg-dark.navbar-dark(style='margin-bottom:4em;')
+      a(href='/home')
+        img#logo(src='https://i.imgur.com/t5c5bfo.png', onclick="location.href = '/home'")
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link(href='/home') Home
+        li.nav-item
+          form
+            input#searchBar(type="text" name="search" placeholder="Search..")
+      .navbar-collapse
+        ul.navbar-nav.ml-auto
+          if (name && name !== '')
+            li.nav-item.dropdown
+              a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Welcome #{name}!
+              .dropdown-menu
+                a.dropdown-item(href='/accountDetails') Account Details
+                a.dropdown-item(href='/logout') Logout
+          else
+            li#profile.nav-item
+              a#login.nav-link(href='/login') Login
+          li#cartItem.nav-item
+            a#cart.nav-link(href='/checkout') Cart
+    .container
+      div#container_all_product
+        div#all-products

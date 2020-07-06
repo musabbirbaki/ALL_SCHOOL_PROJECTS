@@ -1,0 +1,49 @@
+/* Schedule styling the calendar is the actual table tag */
+#calendar{
+  border: 1px solid #000070;
+  width: 100%;
+
+  /* this allows all the column width to be same */
+  table-layout: fixed;
+
+  /* optional extra space for height for each row */
+  height: 50rem;
+}
+
+#calendar > caption{
+  color: #000070;
+
+  /* optional */
+  border-top: 1px solid #000070;
+}
+
+th{
+  background-color: #000070;
+  color: white;
+
+  /* optional */
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  /* locks height of the headers to be small compared to other ones */
+  height: 1rem;
+}
+
+/* Aligning the dates and text to top and left */
+td{
+  vertical-align: top;
+  text-align: left;
+
+  /* optional padding */
+  padding: 2px;
+}
+
+/* adds a little padding on the table sides */
+#calendarSection{
+  padding: 1rem;
+}
+
+/* gives empty cell a smokey color */
+#emptyCell{
+  background-color: whitesmoke;
+}

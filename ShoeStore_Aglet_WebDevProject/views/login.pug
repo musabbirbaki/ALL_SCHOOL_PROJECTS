@@ -1,0 +1,31 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Login | Red Aglet
+    script(type='text/javascript', src='http://code.jquery.com/jquery-latest.min.js')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='styling/loginSignup.css')
+  body
+    nav.navbar.navbar-expand-sm.bg-light.navbar-light
+      a.navbar-brand(href='/home')
+        img#logo(src='https://i.imgur.com/t5c5bfo.png')
+    #box.container
+      img#logo(src='https://i.imgur.com/t5c5bfo.png')
+      h4 Sign in to continue
+      p.errorMessage= errorMessage
+      form(action='/logon', method='post')
+        .form-group
+          label Email Address:
+          input.form-control(type='text', name='email',
+                             id='email')
+        .form-group
+          label Password:
+          input.form-control(type='password', name='pass',
+                             id='pass')
+        p
+          | Not already a user?
+          a#signup(href='/signup')  Signup
+        input#submit.btn.btn-primary(type='submit', value='Login')

@@ -1,0 +1,52 @@
+#container_all_product{
+  margin-bottom: 5rem;
+}
+
+/* this is from https://mdbootstrap.com/snippets/jquery/temp/521944?action=prism_export */
+.gallery {
+  column-count: 3;
+  column-width: 33%;
+  /* not supported for explorer */
+}
+
+
+.product-image{
+  max-height: 10%;
+  width: auto;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+
+.middle {
+  opacity: 0;
+  position: relative;
+  text-align: center;
+  top: 90%;
+  left: 00%;
+  /* moves the tag */
+
+}
+
+.image:hover{
+  opacity: 0.3;
+}
+
+.text {
+  background-color: #003672;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

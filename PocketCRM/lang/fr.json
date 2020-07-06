@@ -1,0 +1,12 @@
+{
+    "register_string": "Registre",
+    "login_string": "S'identifier",
+    "drawer_dashboard": "Tableau de bord",
+    "drawer_tables": "Les tables",
+    "drawer_profile": "Profil",
+    "drawer_logout": "Connectez - Out",
+    "change_pic": "Modifier la photo de profil",
+    "pic_message": "Veuillez changer l'image de profil",
+    "gallery_message": "Veuillez appuyer sur le bouton ci-dessous pour ouvrir votre galerie",
+    "gallery_button": "Galerie"
+}

@@ -1,0 +1,34 @@
+#main{
+  left: 0;
+  width:100%;
+  align-items: center;
+  display: block;
+}
+
+.navbar{
+  background: rgba(0,0,0,0);
+}
+
+.navbar-brand, .head{
+ filter:drop-shadow(0.5em 0.5em 0.5em black);
+}
+
+a {
+  font-size: 18px;
+  color: rgb(220,220,220);
+}
+
+a:hover{
+  color: rgb(180,180,180);
+}
+.fixed-top{
+  position: absolute;
+}
+
+h4 {
+  margin: 2em 0 1em 1em;
+}
+
+body {
+  overflow: hidden;
+}

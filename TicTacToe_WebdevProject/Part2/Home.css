@@ -1,0 +1,29 @@
+.header{
+  color: white;
+  background-color: #000070;
+  padding: 0.2em;
+  padding-left: 1em;
+  margin: 1em;
+  margin-bottom: 0;
+}
+
+.body{
+  margin: 1em;
+  margin-top: 0;
+  background-color: #f0f0ff;
+  border-style: solid;
+  border-color: #000070;
+  border-width: 1px;
+}
+
+.body li{
+  margin-left: 2em;
+}
+
+.body p, .body ul{
+  padding: 1em;
+}
+
+h2{
+  font-weight: normal;
+}

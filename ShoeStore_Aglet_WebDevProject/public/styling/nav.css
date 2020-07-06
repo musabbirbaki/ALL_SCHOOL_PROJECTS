@@ -1,0 +1,42 @@
+.dropdown-item:active{
+  background-color: #ff1a1a;
+}
+
+
+li {
+margin-right: 1rem;
+}
+
+.count{
+display: inline-block;
+}
+
+
+#logo {
+padding:0.25em;
+max-width:30%;
+height:auto;
+}
+
+nav{
+  margin: 0;
+}
+
+#searchBar[type=text] {
+    width: 130px;
+    margin-left: 3rem;
+    box-sizing: border-box;
+    border: 2px solid #FDFDFE;
+    border-bottom: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+
+  #searchBar[type=text]:focus {
+    width: 100%;
+  }
